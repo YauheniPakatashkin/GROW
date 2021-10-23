@@ -2,10 +2,10 @@ import java.sql.SQLOutput;
 
 public class Block1 {
     public static void main(String[] args) {
-        task1(3, 3, 3);
-        task2(2, 4, 4);
-        task3(3, 4);
-
+       task1(3, 3, 3);
+       task2(2, 4, 4);
+       task3(3, 4);
+        task4();
     }
 
     public static double task1(double a, double b, double c) {
@@ -24,9 +24,13 @@ public class Block1 {
         return ((Math.sin(x) + Math.cos(y)) / (Math.cos(x) - Math.sin(y))) + Math.tan(x * y);
     }
 
-    public static void task4(double a) {
+    public static void task4() {
         //Дано действительное число R вида nnn.ddd(три цифровых разряда в дробной и целой частях). Поменять местами
         //дробную и целую части числа и вывести полученное значение числа.
+        double a = 111.222;
+        double b = (a * 1000) % 1000 + (int) a / 1000.0;
+        System.out.println(b);
+
     }
 
 
