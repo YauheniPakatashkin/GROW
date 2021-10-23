@@ -4,7 +4,7 @@ public class Block1 {
     public static void main(String[] args) {
         task1(3, 3, 3);
         task2(2, 4, 4);
-        System.out.println(task2(5,2,7));
+
     }
 
     public static double task1(double a, double b, double c) {
